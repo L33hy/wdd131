@@ -3,74 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 Landing Page</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Lehi Ita Daniel</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Lehi Ita Daniel. Learn about web development fundamentals, coding, design principles, and web resources.">
+    <meta name="author" content="Lehi Ita Daniel">
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./scripts/script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="nav-top">
-            <div class="nav-text">WDD 131: Dynamic Web Fundamentals - Lehi Ita Daniel</div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="linkedIn.html">LinkedIn</a></li>
-                    <li><a href="canvas.html">Canvas</a></li>
-                    <li><a href="scripture.html">Scripture</a></li>
-                    <li><a href="final-project.html">Final Project</a></li>
-                </ul>
-            </nav>
+        <div class="welcome-message">
+            <h1>WDD 131: Dynamic Web Fundamentals</h1> <span class="aside"> - Lehi Ita Daniel</span>
         </div>
+        <nav><!-- <nav class="navbar"> -->
+            <ul>
+                <a href="linkedIn.html">LinkedIn</a>
+                <a href="canvas.html">Canvas</a>
+                <a href="scripture.html">Scripture</a>
+                <a href="final-project.html">Final Project</a>
+            </ul>
+        </nav>
     </header>
-
     <main>
-        <div class="about-text text">
-        <h2>About Me</h2></div>
-        <div class="main-container">
-            <div class="about">
+    <section>
+        <div class="main-section">
+            <section class="main-container main-1">
+                <h2 class="about-me">About Me</h2>
                 <div class="about-content">
-                    <p class="profile-photo"><img src="./images/profile_photo.jpg" alt="Profile Photo" />
-                    My name is Lehi Daniel. I am from the Southern part of Nigeria, Akwa Ibom state. I currently work remotely. I love spending time with friends and family outdoors. I also love to travel and learn new things.
-                    Beyond work, I love spending time outdoors with friends and family, traveling to new places, and constantly learning new things. My curiosity and adaptability help me embrace challenges with confidence. I'm also passionate about web development, digital systems, and leveraging technology to improve efficiency.
-
-I believe in honesty, dedication, and continuous growth. Whether it's leading a team, managing data, or exploring innovative solutions, I bring enthusiasm and a results-driven mindset to everything I do.</p>
+                    <p>My name is Lehi Daniel. I am from the Southern part of Nigeria, Akwa Ibom state. I currently work remotely. I love spending time with friends and family outdoors. I also love to travel and learn new things.
+                        Beyond work, I love spending time outdoors with friends and family, traveling to new places, and constantly learning new things. My curiosity and adaptability help me embrace challenges with confidence. 
+                        I'm also passionate about web development, digital systems, and leveraging technology to improve efficiency.
+                    </p>
+                    <div class="img-container">
+                        <img src="./images/profile_photo.jpg" alt="Profile Photo of Lehi Ita Daniel" loading="lazy" />
+                    </div>
                 </div>
-
-                <div class="state-des">
-                    <img src="./images/nigerian-flag.png" alt="Nigerian Flag">
-                    <p>Akwa Ibom is the largest producer of crude oil in Nigeria, contributing significantly to the country’s economy. The state is part of the Niger Delta region, known for its vast oil and gas reserves.
-                    The Godswill Akpabio International Stadium, located in Uyo, is one of the most modern and well-equipped stadiums in Africa. With a seating capacity of 30,000, it has hosted several international football matches, including Super Eagles games.
-                    Akwa Ibom is culturally rich, with three major ethnic groups: the Ibibio, Annang, and Oron. Each group has a distinct language, customs, and traditions that contribute to the state's vibrant cultural heritage.</p>
+                <div class="my-content"><!-- <div class="state-des"> -->
+                    <h2 class="country">Akwa Ibom, Nigeria</h2>
+                    <hr>
+                    <div class="about-country">
+                        <div class="country-image">
+                            <img src="./images/nigerian-flag.png" alt="Photo of the Nigerian Flag" loading="lazy">
+                        </div>
+                        <p>Akwa Ibom is the largest producer of crude oil in Nigeria, contributing significantly to the country’s economy. The state is part of the Niger Delta region, known for its vast oil and gas reserves.
+                            The Godswill Akpabio International Stadium, located in Uyo, is one of the most modern and well-equipped stadiums in Africa. With a seating capacity of 30,000, it has hosted several international football matches, including Super Eagles games.
+                            Akwa Ibom is culturally rich, with three major ethnic groups: the Ibibio, Annang, and Oron. Each group has a distinct language, customs, and traditions that contribute to the state's vibrant cultural heritage.</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="resources">
-            <div class="web-dev text"><h2>Web Dev Resources</h2></div>
-                <div class="resource-pages">
+            </section>
+            <section class="main-container main-2">
+                <h2 class="web-dev">Web Dev Resources</h2>
+                <div class="resources">
+                    <h3>This is a complete web development resource you need to build your next project.</h3>
                     <ul>
-                        <li><a href="#dev-to-com">Dev.to Community</a></li>
-                        <li><a href="#smashing-mag">Smashing Magazine</a></li>
-                        <li><a href="#css-tricks">CSS Tricks</a></li>
-                        <li><a href="#w3-schools">W3 Schools</a></li>
-                        <li><a href="#udemy">Udemy</a></li>
-                        <li><a href="#image-placeholder">Image Placeholder</a></li>
+                        <li><a href="https://www.freecodecamp.org/learn" rel="nofollow">freeCodeCamp</a> - Free course to learn Web Development.</li>
+                        <li><a href="https://learn.shayhowe.com" rel="nofollow">Learn to Code HTML & CSS</a> - The guide covers a variety of web design and development topics, ranging from beginner to advanced skill levels.</li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" rel="nofollow">CSS3 Properties</a> - CSS reference by MDN.</li>
+                        <li><a href="https://cssreference.io" rel="nofollow">CSS Reference</a> - A free visual guide to CSS.</li>
+                        <li><a href="https://csslayout.io" rel="nofollow">CSS Layout</a> - A collection of popular CSS layouts and patterns made with CSS.</li>
+                        <li><a href="https://moderncss.dev" rel="nofollow">Modern CSS Solutions</a> - A series examining modern CSS solutions to problems.</li>
+                        <li><a href="https://flukeout.github.io" rel="nofollow">CSS Diner</a> - A fun game to help you learn and practice CSS selectors.</li>
+                        <li><a href="https://flexboxfroggy.com" rel="nofollow">Flexbox Froggy</a> - A game that helps you to learn CSS Flex.</li>
+                        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" rel="nofollow">CSS TRICKS - Flexbox</a> - A Complete Guide to Flexbox.</li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" rel="nofollow">CSS Grid Layout</a> - CSS reference by MDN.</li>
                     </ul>
                 </div>
-            </div>
+            </section>
         </div>
+    </section>
     </main>
-
     <footer>
-        <div class="copyright">
-            <div> &copy; 2021 Lehi Daniel Nigeria</div>
-            <div class="last-mod">Last Modification: </div>
-            <div class="social-media">
-                <a href="#"><img src="#facebook-icon" alt="Facebook"></a>
-                <a href="#"><img src="#twitter-icon" alt="Twitter"></a>
-                <a href="#"><img src="#instagram-icon" alt="Instagram"></a>
-            </div>
+        <p> &copy; <span id="currentyear"></span>Lehi Ita Daniel. Nigeria</p>
+        <p id="lastmodified" class="aside"></p>
+        <div class="social-media">
+            <a href="https://facebook.com"><img src="./images/facebook-icon.png" alt="Facebook" loading="lazy"></a>
+            <a href="https://twitter.com"><img src="./images/twitter-icon.png" alt="Twitter" laoding="lazy"></a>
+            <a href="https://instagram.com"><img src="./images/instagram-icon.jpg" alt="Instagram" loading="lazy"></a>
         </div>
     </footer>
-
-    <script src="./scripts/script.js"></script>
+    
 </body>
 </html>
