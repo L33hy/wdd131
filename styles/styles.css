@@ -215,7 +215,7 @@ footer p:last-child {
 
 }
 
-@media (min-width: 412px) and (max-width: 768px) {
+@media (min-width: 370px) and (max-width: 768px) {
     body {
         display: block;
         flex-direction: column;
