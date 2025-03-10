@@ -215,32 +215,64 @@ footer p:last-child {
 
 }
 
-@media (max-width: 480px) {
-	.welcome-message {
-		padding: 20px;
-	}
+@media (min-width: 480px) and (max-width: 768px) {
+    body {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-	.welcome-message h1 {
-		font-size: 1.5rem;
-	}
+    main, .main-section, .main-container, .about-content, .about-country, .resources, .navbar ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
 
-	.welcome-message span {
-		font-size: 1.5rem;
-	}
+    .welcome-message {
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
 
-	nav {
-		padding: 1rem;
-	}
+    .about-content img, .about-country img, .state-des img {
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
 
-	nav a {
-		font-size: 1.2rem;
-	}
+    nav ul {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
 
-	footer p {
-		font-size: 1rem;
-	}
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 
-	footer p:last-child {
-		font-size: 0.8rem;
-	}
+    .about-country p {
+        text-align: justify;
+    }
+
+    .resources {
+        text-align: justify;
+    }
+
+    .resources ul {
+        padding-left: 0;
+    }
+
+    /* .resources ul li {
+        list-style: none;
+    } */
+
+    footer {
+        text-align: center;
+    }
 }
