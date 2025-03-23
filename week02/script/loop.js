@@ -27,8 +27,13 @@ favoriteFood3.textContent = myInfo.favoriteFoods[2];
 let favoriteFood4 = document.createElement("li");
 favoriteFood4.textContent = myInfo.favoriteFoods[3];
 
+const paragraph = document.createElement('p');
+article.appendChild(paragraph);
+article.append(paragraph, `Hello World Addition`);
+
 // Step 5: Append the <li> elements created above as children of the HTML <ul> element with an ID of favorite-foods
 document.querySelector("#favorite-foods").appendChild(favoriteFood1);
 document.querySelector("#favorite-foods").appendChild(favoriteFood2);
 document.querySelector("#favorite-foods").appendChild(favoriteFood3);
 document.querySelector("#favorite-foods").appendChild(favoriteFood4);
+

@@ -1,0 +1,34 @@
+@media (max-width: 760px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        display: block;
+    }
+    
+    #hamburger {
+        display: block;
+        align-self: flex-end;
+    }
+
+    nav ul {
+        display: none;
+		flex-direction: column;
+		width: 100%;
+		top: 5.677rem;
+		right: 0;
+		transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    /* nav ul.show {
+        max-height: 320px;
+        opacity: 1;
+    } */
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    nav ul li a{
+        padding: 0;
+    }
+}

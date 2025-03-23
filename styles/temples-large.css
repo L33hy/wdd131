@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #1867dc;
+    color: #fff;
+    padding: 20px;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+div .heading {
+    position: absolute;
+    left: 20px;
+    font-size: 1.5rem;
+}
+
+#hamburger {
+    display: none;
+    /* background: none; */
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    gap: 3rem;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding-right: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+li a:hover::after {
+    width: 90%;
+}
+
+li a::after {
+    background-color: #fff;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    height: 2px;
+    transition: width 0.3s ease;
+}
+
+/* .nav ul.open {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+} */
+
+header p {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.temple {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted for responsiveness */
+    gap: 1rem;
+    margin: 0 auto; /* Center the grid horizontally */
+    max-width: 1020px; /* Optional: set a max width for better readability */
+    justify-items: center; /* Center items horizontally within grid cells */
+    font-weight: 700;
+}
+
+figure {
+    padding-bottom: 1rem;
+    text-align: center; /* Center figcaption */
+}
+
+figcaption {
+    text-align: center;
+    padding: 5px;
+}
+
+footer {
+    background-color: #1867dc;
+    color: #fff;
+}
+
+footer p {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.aside {
+    color: rgb(220, 220, 16);
+}
