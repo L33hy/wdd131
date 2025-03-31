@@ -15,21 +15,25 @@ header {
     /* width: 100%; */
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
-div .heading {
-    position: absolute;
-    left: 20px;
+.heading {
     font-size: 1.5rem;
 }
 
+/* #hamburger::before {
+    content: "☰";
+} */
+
 #hamburger {
     display: none;
-    /* background: none; */
+    background: none;
     border: none;
-    font-size: 1.5em;
+    font-size: 2rem;
     cursor: pointer;
+    color: #fff;
+    padding: .25rem;
 }
 
 nav ul {
@@ -40,10 +44,9 @@ nav ul {
 }
 
 li a {
-    display: block;
     text-decoration: none;
     color: #fff;
-    padding-right: 10px;
+    padding: 10px;
     font-size: 1.2rem;
     font-weight: 600;
     transition: background-color 0.3s;
@@ -72,11 +75,11 @@ li a::after {
     font-weight: 400;
 } */
 
-header p {
+/* header p {
     display: flex;
     align-items: center;
     justify-items: center;
-}
+} */
 
 h1 {
     text-align: center;
