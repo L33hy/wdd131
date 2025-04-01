@@ -9,7 +9,7 @@ document.getElementById("lastmodified").textContent =
 
 // Load country data from JSON
 function loadData() {
-  fetch("../data/data.json")
+  fetch("/data/data.json")
       .then(response => response.json())
       .then(data => {
           const content = `
