@@ -49,5 +49,5 @@ function loadWeather() {
           `;
           document.getElementById("weather-content").innerHTML = weatherHTML;
       })
-      .catch(error => console.error("Error fetching weather data:", error));
+    //   .catch(error => console.error("Error fetching weather data:", error));
 }
