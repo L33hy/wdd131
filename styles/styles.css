@@ -17,6 +17,11 @@ body {
     overflow-x: hidden;
 }
 
+main img {
+    height: 32rem;
+    width: 100%;
+}
+
 h1 {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
@@ -85,6 +90,8 @@ h2 {
 .weather-pro img {
     margin-right: 3rem;
     color: #fff;
+    height: auto;
+    width: 50px;
 }
 #location, #weather-content {
     text-align: center; /* Center aligns all text */
