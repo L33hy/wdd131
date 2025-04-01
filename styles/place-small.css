@@ -1,4 +1,5 @@
 @media (max-width: 760px) {
+    
     main {
         display: flex;
         flex-direction: column;
