@@ -1,0 +1,40 @@
+@media (max-width: 760px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .heading {
+        font-size: 2rem;
+
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .nav-bar {
+        display: none;
+		/* flex-direction: column; */
+		width: 100%;
+        padding: 3px;
+		top: 82px;
+        position: absolute;
+		left: 0;
+        background-color: rgb(0, 166, 255);
+        text-align: center;
+		transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    .nav-bar.active {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    nav ul li {
+        margin:  0 auto;
+    }
+}
