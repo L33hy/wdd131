@@ -28,7 +28,7 @@
         display: none;
         width: 100%;
         position: absolute;
-        top: 102px; /* Adjust based on header height */
+        top: 98px; /* Adjust based on header height */
         left: 0;
         background-color: #2979ff; /* A slightly lighter shade */
         text-align: left; /* Align text to the left in the menu */
