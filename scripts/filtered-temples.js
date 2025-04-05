@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navBar = document.querySelector('.nav-bar');
   const navList = document.getElementById('nav-list');
   const resGrid = document.querySelector('.res-grid');
+  const navLinks = navList.querySelectorAll('a');
 
   if (currentYear) {
       currentYear.textContent = new Date().getFullYear();
@@ -157,6 +158,20 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   }
 
+  // Function to set the active link style
+  function setActiveLink(target) {
+    navLinks.forEach(link => {
+        link.classList.remove('active-link');
+    });
+    target.classList.add('active-link');
+}
+
+// Initially set the 'Home' link as active
+const homeLink = document.querySelector('nav a[href="#home"]');
+if (homeLink) {
+    setActiveLink(homeLink);
+}
+
   // Initial display of all temples
   displayTemples(temples);
 
@@ -181,6 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
               }
 
               displayTemples(filteredTemples);
+              setActiveLink(event.target);
               navBar.classList.remove('active'); // Close the menu after clicking
           }
       });

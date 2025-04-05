@@ -43,6 +43,12 @@ nav ul {
     gap: 3rem;
 }
 
+li a.active-link {
+    background-color: #0d47a1; /* Darker shade of the header background */
+    color: #fff;
+    border-radius: 4px;
+}
+
 li a {
     text-decoration: none;
     color: #fff;
