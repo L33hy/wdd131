@@ -51,6 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 localStorage.setItem('reviewCount', reviewCount);
 
                 // Redirect to the thank you page with the review number in the URL
-                window.location.href = `form.html?${params.toString()}&reviewNumber=${reviewCount}`;
+                window.location.href = `review.html?${params.toString()}&reviewNumber=${reviewCount}`;
         });
     });

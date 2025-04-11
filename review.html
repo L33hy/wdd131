@@ -13,91 +13,18 @@
     <link rel="stylesheet" href="./styles/review.css">
     <link rel="stylesheet" href="./styles/small-review.css">
 
-    <script src="./scripts/review.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
     <script src="./scripts/temples.js" defer></script>
 
     <title>Read verified product review from customers</title>
 </head>
 <body>
     <header>
-        <h1>Product Review</h1>
+        <h1>Review Confirmation</h1>
     </header>
-    <main>
-        <form id="reviewForm" action="review.html" method="get">
-            <div class="form-group">
-                <label for="productName">Product Name</label>
-                <select id="productName" name="productName" required>
-                    <option value="" disabled selected>Choose a Product ...</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label>Overall Rating</label>
-                <div class="rating">
-                  <ul>
-                    <li>
-                      <input type="radio" id="star1" name="rating" value="1" required>
-                      <label for="star1">&#9733;</label>
-                    </li>
-                    <li>
-                      <input type="radio" id="star2" name="rating" value="2" required>
-                      <label for="star2">&#9733;&#9733;</label>
-                    </li>
-                    <li>
-                      <input type="radio" id="star3" name="rating" value="3" required>
-                      <label for="star3">&#9733;&#9733;&#9733;</label>
-                    </li>
-                    <li>
-                      <input type="radio" id="star4" name="rating" value="4" required>
-                      <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
-                    </li>
-                    <li>
-                      <input type="radio" id="star5" name="rating" value="5" required>
-                      <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
-                    </li>
-                  </ul>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="installationDate">Date of Installation</label>
-                <input type="date" id="installationDate" name="installationDate" required>
-            </div>
-
-            <div class="form-group features">
-                <label>Which features did you find useful in the product? <small>(Check all that apply)</small></label>
-                <div>
-                    <input type="checkbox" id="feature1" name="features" value="Durability">
-                    <label for="feature1">Durability</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="feature2" name="features" value="Ease of Use">
-                    <label for="feature2">Ease of Use</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="feature3" name="features" value="Performance">
-                    <label for="feature3">Performance</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="feature4" name="features" value="Design">
-                    <label for="feature4">Design</label>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="reviewText">Written Review <small>(Optional)</small></label>
-                <textarea id="reviewText" name="reviewText" ></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="userName">Your Name <small>(Optional)</small></label>
-                <input type="text" id="userName" name="userName">
-            </div>
-
-            <div class="form-group">
-                <input type="submit" value="Post Review">
-            </div>
-        </form>
+    <main class="width">
+        <p>Thank you for your review! This is review number <span id="reviewCount"></span> you've submitted.</p>
+        <p><a href="./form.html">Submit another review</a></p>
     </main>
     <footer>
         <p> &copy; <span id="currentyear"></span> 🌺 Lehi Ita Daniel 🌺 Nigeria</p>
