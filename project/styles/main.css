@@ -26,6 +26,7 @@ header {
 
 .logo img {
     margin-right: 1rem;
+    height: auto;
 }
 
 nav ul {
@@ -109,6 +110,7 @@ main {
     flex: 1;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
 }
 
 .features {
@@ -133,6 +135,7 @@ main {
 
 .feature-item img {
     border-radius: 5px;
+    height: auto;
 }
 
 .testimonials {

@@ -1,9 +1,22 @@
 // weather.js
 document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerButton = document.querySelector('.hamburger-button');
+    const navLinks = document.querySelector('.nav-links');
     const weatherContainer = document.getElementById('weather-container');
     const apiKey = '278286a1cca556be7de32b0aa2f565ea'; // Replace with your actual API key
     const city = 'Abuja'; // You can make this dynamic based on user location
 
+    // Responsive Navigation
+    hamburgerButton.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+        });
+    });
+    
     // Function to fetch weather data
     async function fetchWeatherData() {
         const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
