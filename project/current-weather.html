@@ -3,48 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the comprehensive agricultural logistics, import, and export services offered by Etakings.">
+    <meta name="description" content="Etakings: Your trusted partner for agricultural logistics, import, and export solutions worldwide.">
     <meta name="author" content="Lehi Ita Daniel">
-    <meta property="og:title" content="Our Services - Etakings">
+    <meta property="og:title" content="Etakings - Agricultural Logistics, Import & Export">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./images/etakings-logo.webp">
-    <meta property="og:url" content="https://your-github-username.github.io/wdd231/project/service.html">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/project/index.html">
 
     <link rel="icon" href="./images/etakings-favicon.webp" type="image/x-icon">
-
+    
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/responsive.css">
-    <link rel="stylesheet" href="./styles/modal.css">
-    
-    <script type="module" src="./scripts/service.js" defer></script>
+    <link rel="stylesheet" href="./styles/weather.css">
 
-    <title>Our Services - Etakings</title>
+    <script type="module" src="./scripts/weather.js" defer></script>
+
+    <title>Etakings - Empowering Global Agriculture, Logistics, Import and Export</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="./images/etakings-logo-s.webp" alt="Etakings Logo" loading="lazy" width="60" height="auto">
+            <img src="./images/etakings-logo.webp" alt="Etakings Logo" loading="lazy" width="60">
             <h1>Etakings</h1>
         </div>
         <nav class="responsive-nav">
             <button class="hamburger-button" aria-label="Toggle Navigation">☰</button>
             <ul class="nav-links">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./service.html" class="active">Services</a></li>
+                <li><a href="./service.html">Services</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./current-weather.html">Weather</a></li>
+                <li><a href="./current-weather.html" class="active">Weather</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="page-title">
-            <h2>Our Comprehensive Services</h2>
-            <p>Etakings offers a wide range of solutions to meet your agricultural needs.</p>
-        </section>
-
-        <section class="service-list" id="service-list-container">
-            </section>
+    <div id="weather-container">
+        </div>
     </main>
 
     <footer>
